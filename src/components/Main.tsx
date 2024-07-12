@@ -6,22 +6,24 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { TextGenerateEffectDemo } from './comps/fadetext'
 import { GlowingStarsBackgroundCardPreview } from './comps/starcards'
 import { motion,AnimatePresence  } from "framer-motion";
+import { GlobeDemo } from './comps/earth'
+
 import Image from 'next/image'
 function Main() {
    
   return (
     <>
     
-    <div className='flex p-4'>
+    <div className=' z-50'>
     <motion.div
-    className='flex'
-   animate={{ x: 100 }}
+    className='flex p-5'
+   animate={{}}
    initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     
    transition={{ ease: "easeOut", duration: 2 }}
 ><FlipWordsDemo/>
-<Example/> </motion.div>
+<GlobeDemo/> </motion.div>
     
    
     </div>
