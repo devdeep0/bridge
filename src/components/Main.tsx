@@ -5,15 +5,24 @@ import Example from './comps/floatingphone'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { TextGenerateEffectDemo } from './comps/fadetext'
 import { GlowingStarsBackgroundCardPreview } from './comps/starcards'
+import { motion,AnimatePresence  } from "framer-motion";
 import Image from 'next/image'
 function Main() {
+   
   return (
     <>
     
     <div className='flex p-4'>
+    <motion.div
+    className='flex'
+   animate={{ x: 100 }}
+   initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
     
-    <FlipWordsDemo/>
-    <Example/>
+   transition={{ ease: "easeOut", duration: 2 }}
+><FlipWordsDemo/>
+<Example/> </motion.div>
+    
    
     </div>
     <Parallax className='flex z-20'  pages={3} style={{ bottom: '0', left: '0' }}>
@@ -29,10 +38,24 @@ function Main() {
         <div className=' h-[500px] w-[500px] flex items-center justify-center animate-scale'  style={{backgroundImage: `url('/bg/image-eda8ca29-dd8a-4284-b062-f3663c4a9783.webp')`,backgroundSize: 'contain', }}></div>
         </div>
         <div>
-        <GlowingStarsBackgroundCardPreview/>
+        
+        <motion.div
+    
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }} 
+    ><GlowingStarsBackgroundCardPreview/></motion.div>
+
         </div>
         </div>
+      
         <div className='relative w-full h-screen'>
+        <motion.div
+    
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }} 
+    >
         <Image
         className='w-full h-full'
         src="/bg/image-6383d679-c05c-48a6-b90b-4ba9e3dabe29.webp"
@@ -41,9 +64,11 @@ function Main() {
         height={300} // Replace with your image's height
         objectFit='cover'
       />
+      </motion.div>
       <div className='absolute inset-0 flex top-40 text-7xl font-bold justify-center'>Our Vision</div>
-      <div className='absolute bottom-0 flex justify-center '>To see every African capable of operating an Ethereum node, contributing to a decentralized and empowered continent.</div>
+      <div className='absolute bottom-40 text-4xl left-40 inset-1 flex justify-center items-end'>To see every African capable of operating an Ethereum node, contributing to a decentralized and empowered continent.</div>
         </div>
+     
       </div>
       </div>
       </ParallaxLayer>
