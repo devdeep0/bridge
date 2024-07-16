@@ -11,7 +11,9 @@ import { WavyBackgroundDemo } from './comps/wave'
 import { CardStackDemo } from './comps/cardstack'
 import { MeteorsDemo } from './comps/cardagain'
 import { CanvasRevealEffectDemo3 } from './comps/betweenbg'
+import { ShineBorderDemo } from './comps/shiningborder'
 import Image from 'next/image'
+
 function Main() {
    
   return (
@@ -31,7 +33,7 @@ function Main() {
     
    
     </div>
-    <Parallax className='flex z-20'  pages={4} style={{ bottom: '0', left: '0' }}>
+    <Parallax className='flex z-20'  pages={5} style={{ bottom: '0', left: '0' }}>
       <ParallaxLayer offset={0.9} speed={2}>
         <div className='relative z-20'>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 329.5" fill="none" preserveAspectRatio="xMidYMid meet" role="img"><path d="M526.435 147.379L407.565 10.9763C401.488 4.00269 392.691 0 383.441 0H0V329.5H1440V158.355H550.559C541.309 158.355 532.512 154.352 526.435 147.379Z" fill="#cf6cfb"></path></svg>
@@ -123,18 +125,101 @@ function Main() {
 </div>
 
 <div className='h-auto w-full mt-60'>
-  <div className='relative'>
+  <div className='relative h-screen w-full'>
 <svg className='' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 329.5" fill="none" preserveAspectRatio="xMidYMid meet" role="img"><path d="M526.435 147.379L407.565 10.9763C401.488 4.00269 392.691 0 383.441 0H0V329.5H1440V158.355H550.559C541.309 158.355 532.512 154.352 526.435 147.379Z" fill="#cf6cfb"></path></svg>
 <div className='h-screen w-full absolute top-[200px] z-30'>
 <CanvasRevealEffectDemo3/>
 </div>
+
+</div>
+<div className='flex flex-col gap-36'>
+<div className='text-5xl text-center w-full font-bold'>DECENTRALIZATION</div>
+<div className='h-auto w-full '>
+    <div className='flex h-full w-full'>
+      <div className='h-full w-full flex flex-col justify-center items-center p-5 gap-10'>
+        <div className='text-5xl text-center font-semibold w-full italic text-green-500'>Solo Staking: </div>
+        <div className='text-xl  w-full'>Solo staking is the act of running an Ethereum node connected to the internet and depositing 32 ETH to activate a validator, giving you the ability to participate directly in network consensus. Solo staking increases the decentralization of the Ethereum network, making Ethereum more censorship-resistant and robust against attacks. Other staking methods may not help the network in the same ways. Solo staking is the best staking option for securing Ethereum.</div>
+      </div>
+      <div className='h-full w-full flex justify-end'>
+        
+       <Image
+       className='w-3/4 h-3/4 p-4'
+       src="/5355030.jpg"
+       alt=''
+       width={2000} // Replace with your image's width
+       height={2000} // Replace with your image's height
+       objectFit='cover'
+        />
+      </div>
+    </div>
+</div>
+<div className='flex flex-col gap-36'>
+<div className='text-5xl text-center w-full font-bold'>EMPOWERMENT</div>
+<div className='h-auto w-full '>
+    <div className='flex h-full w-full'>
+    <div className=' h-full w-full flex justify-center gap-5'>
+        <div className='text-black h-[500px] w-[300px] flex flex-col justify-between  rounded-xl bg-white'>
+        <div className='p-5 text-3xl font-bold'>Self-Sufficiency</div>
+        <div className='p-3'> Operating your own node means you are independently verifying all transactions and contracts, contributing to the integrity and security of the blockchain.</div>
+        <video src="https://d2lmtec3l0byw.cloudfront.net/hover-card-1.mp4" preload="auto" loop webkit-playsinline="" x5-playsinline="" ></video>
+        </div>
+        <div className='text-black h-[500px] w-[300px] flex flex-col justify-between  rounded-xl bg-white'>
+        <div className='p-5 text-3xl font-bold'>Self-Sufficiency</div>
+        <div className='p-3'> Operating your own node means you are independently verifying all transactions and contracts, contributing to the integrity and security of the blockchain.</div>
+        <video src="https://d2lmtec3l0byw.cloudfront.net/hover-card-1.mp4" preload="auto" loop webkit-playsinline="" x5-playsinline="" ></video>
+        </div>
+        <div className='text-black h-[500px] w-[300px] flex flex-col justify-between  rounded-xl bg-white'>
+        <div className='p-5 text-3xl font-bold'>Self-Sufficiency</div>
+        <div className='p-3'> Operating your own node means you are independently verifying all transactions and contracts, contributing to the integrity and security of the blockchain.</div>
+        <video src="https://d2lmtec3l0byw.cloudfront.net/hover-card-1.mp4" preload="auto" loop webkit-playsinline="" x5-playsinline="" ></video>
+        </div>
+       </div>
+    </div>
+</div>
+</div>
+<div className='text-5xl text-center w-full font-bold'>COMMUNITY AND COLLABORATION</div>
+<div className='h-auto w-full '>
+    <div className='flex h-full w-full'>
+    <div className='h-full w-full flex justify-start'>
+        
+        <Image
+        className='w-3/4 h-3/4 p-4'
+        src="/8010.jpg"
+        alt=''
+        width={2000} // Replace with your image's width
+        height={2000} // Replace with your image's height
+        objectFit='cover'
+         />
+       </div>
+      <div className='h-full w-full flex flex-col justify-center items-center p-5 gap-10'>
+        <div className='text-5xl text-center font-semibold w-full italic text-green-500'>Global Network: </div>
+        <div className='text-xl  w-full'>Join a global network of node operators and blockchain enthusiasts, sharing knowledge and resources. <br /> Benefit from a supportive community that understands and addresses the unique challenges faced in Africa.</div>
+      </div>
+
+    </div>
+</div>
+
+</div>
+
+
+<div className='relative mt-72 z-20 h-full'>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0.000005595059974439209 -0.00011755200830521062 1440 254.5001220703125" fill="none" preserveAspectRatio="xMidYMid meet" role="img">
+<path d="M886.873 54.6273L932.127 9.3725C938.129 3.37134 946.268 -8.27254e-05 954.755 -8.34673e-05L1440 -0.000117552L1440 254.5L3.54062e-05 254.5L5.59506e-06 64L864.245 63.9999C872.732 63.9999 880.871 60.6285 886.873 54.6273Z" fill="#FFF4E1"></path>
+</svg>
+<div className='text-5xl text-end p-5 font-bold w-full absolute top-[250px] h-[200px] bg-black'>
+OUR PARTNERS
+</div>
 <div className='h-screen w-full '>
   
+</div>
+<div className='h-screen  w-full bg-black flex items-center justify-center'>
+<ShineBorderDemo/>
 </div>
 </div>
 </div>
 </div>
       </div>
+
       </div>
       </div>
       </ParallaxLayer>
