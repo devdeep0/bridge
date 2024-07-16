@@ -33,7 +33,7 @@ function Main() {
     
    
     </div>
-    <Parallax className='flex z-20'  pages={5} style={{ bottom: '0', left: '0' }}>
+    <Parallax className='flex z-20'  pages={7} style={{ bottom: '0', left: '0' }}>
       <ParallaxLayer offset={0.9} speed={2}>
         <div className='relative z-20'>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 329.5" fill="none" preserveAspectRatio="xMidYMid meet" role="img"><path d="M526.435 147.379L407.565 10.9763C401.488 4.00269 392.691 0 383.441 0H0V329.5H1440V158.355H550.559C541.309 158.355 532.512 154.352 526.435 147.379Z" fill="#cf6cfb"></path></svg>
