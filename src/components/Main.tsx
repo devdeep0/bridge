@@ -19,9 +19,9 @@ function Main() {
   return (
     <>
     
-    <div className=' z-50'>
+    <div className=' z-0'>
     <motion.div
-    className='flex p-5'
+    className='flex p-5 dark:bg-black bg-white'
    animate={{}}
    initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
@@ -37,7 +37,7 @@ function Main() {
       <ParallaxLayer offset={0.9} speed={2}>
         <div className='relative z-20'>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 329.5" fill="none" preserveAspectRatio="xMidYMid meet" role="img"><path d="M526.435 147.379L407.565 10.9763C401.488 4.00269 392.691 0 383.441 0H0V329.5H1440V158.355H550.559C541.309 158.355 532.512 154.352 526.435 147.379Z" fill="#cf6cfb"></path></svg>
-      <div className='h-auto fixed z-20 top-[210px] bg-black w-full mb-1'>
+      <div className='h-auto fixed z-20 top-[210px] bg-white dark:bg-black w-full text-black dark:text-white mb-1'>
         <div className='text-7xl font-bold p-10'>ABOUT US</div>
         <div className='w-full flex flex-col gap-10 items-center justify-center'>
         <div className='w-2/4 text-center text-xl mt-4'><TextGenerateEffectDemo/></div>
@@ -106,7 +106,7 @@ function Main() {
 <path d="M886.873 54.6273L932.127 9.3725C938.129 3.37134 946.268 -8.27254e-05 954.755 -8.34673e-05L1440 -0.000117552L1440 254.5L3.54062e-05 254.5L5.59506e-06 64L864.245 63.9999C872.732 63.9999 880.871 60.6285 886.873 54.6273Z" fill="#FFF4E1"></path>
 </svg>
 
-<div className=' h-auto flex flex-col items-center absolute z-20 top-[240px] bg-black w-full '>
+<div className=' h-auto flex flex-col items-center absolute z-20 top-[240px] dark:bg-black text-black dark:text-white bg-white w-full '>
 <div className='text-6xl w-full  m-5 flex items-start justify-end font-bold'>PROGRAMS</div>
 <WavyBackgroundDemo/>
 <div className='flex gap-40 h-full'>
@@ -124,7 +124,7 @@ function Main() {
 <MeteorsDemo/>
 </div>
 
-<div className='h-auto w-full mt-60'>
+<div className='h-auto w-full mt-60 dark:bg-black text-black dark:text-white bg-white'>
   <div className='relative h-screen w-full'>
 <svg className='' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 329.5" fill="none" preserveAspectRatio="xMidYMid meet" role="img"><path d="M526.435 147.379L407.565 10.9763C401.488 4.00269 392.691 0 383.441 0H0V329.5H1440V158.355H550.559C541.309 158.355 532.512 154.352 526.435 147.379Z" fill="#cf6cfb"></path></svg>
 <div className='h-screen w-full absolute top-[200px] z-30'>
@@ -206,13 +206,13 @@ function Main() {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0.000005595059974439209 -0.00011755200830521062 1440 254.5001220703125" fill="none" preserveAspectRatio="xMidYMid meet" role="img">
 <path d="M886.873 54.6273L932.127 9.3725C938.129 3.37134 946.268 -8.27254e-05 954.755 -8.34673e-05L1440 -0.000117552L1440 254.5L3.54062e-05 254.5L5.59506e-06 64L864.245 63.9999C872.732 63.9999 880.871 60.6285 886.873 54.6273Z" fill="#FFF4E1"></path>
 </svg>
-<div className='text-5xl text-end p-5 font-bold w-full absolute top-[250px] h-[200px] bg-black'>
+<div className='text-5xl text-end p-5 font-bold w-full absolute top-[250px] h-[200px] dark:bg-black text-black dark:text-white bg-white'>
 OUR PARTNERS
 </div>
 <div className='h-screen w-full '>
   
 </div>
-<div className='h-screen  w-full bg-black flex items-center justify-center'>
+<div className='h-screen  w-full dark:bg-black text-black dark:text-white bg-white flex items-center justify-center'>
 <ShineBorderDemo/>
 </div>
 </div>

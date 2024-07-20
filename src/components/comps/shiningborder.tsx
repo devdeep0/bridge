@@ -7,17 +7,19 @@ export function ShineBorderDemo() {
       color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
     >
 
-      <div className="h-full w-full gap-4 flex flex-col items-start p-5 justify-center">
+      <div className="h-full w-full gap-5 flex flex-col items-start p-5 justify-center">
         <div className="text-4xl">Become a Member</div>
         <div>Join NodeBridge and start your journey towards becoming a successful Ethereum node operator.</div>
+        <div className="bg-green-500 px-5 py-3 rounded-md">Sign Up Now</div>
         </div>
       <div className="h-full w-full flex items-center justify-center">
       <Image
-      className="h-2/4 w-2/4"
+      className="h-4/4 w-3/4"
       src='/Untitled-2.png'
       alt=""
-      height={1000}
-      width={1000}
+      height={500}
+      width={500}
+   
       />
       </div>
 
